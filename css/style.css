@@ -54,7 +54,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 
 @media only screen and (max-width:899px) {
   .content .actions-bath { display: flex; justify-content: space-between; align-items: center; margin-top: 80px; }
-  .content .actions-bath .globalButton { margin-right: 0; font-size: 13px; width: 120px; }
+  .content .actions-bath .globalButton { margin-right: 0; font-size: 13px; width: 105px; padding: 10px; }
 
 }
 
