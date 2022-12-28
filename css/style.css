@@ -46,7 +46,9 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 
 @media only screen and (max-width:899px) {
   .content { width: 100%; padding: 20px; }
+  .content .welcome { margin-top: 80px; }
 }
+
 
 /* ACTIONS BATH */
 .content .actions-bath { display: flex; }
