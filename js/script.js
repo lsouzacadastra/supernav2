@@ -12,3 +12,8 @@ function showReports() {
     var element = document.getElementById("reports-bath");
     element.classList.toggle("show");
 }
+
+function showMenu() {
+    var element = document.getElementById("menu-mobile");
+    element.classList.toggle("show");
+}
