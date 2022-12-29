@@ -228,6 +228,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 }
 
 .content .bag-list .table tbody tr td { font-size: 14px; vertical-align: middle; padding: 7px; line-height: 40px; color: rgba(0,0,0,0.6);}
+.content .bag-list .table tbody tr td.hideDesktop { display: none; }
 .content .bag-list .table tbody tr:hover { background: #f1f1f1; }
 .content .bag-list .table tbody tr td img { width: 25px; display: inline-block; }
 .content .bag-list .table tbody tr td img:hover { cursor:pointer; opacity: 0.6; }
@@ -238,6 +239,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 @media only screen and (max-width:899px) {
   .content .bag-list h3 { font-weight: bold; font-size: 18px; margin-bottom: 20px !important; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; }
   .content .bag-list .table tbody tr td { line-height: 20px; }
+  
 
   #table-responsive-bag table, 
 	#table-responsive-bag thead, 
@@ -249,6 +251,11 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 	#table-responsive-bag thead tr { position: absolute; top: -9999px; left: -9999px;}
 	#table-responsive-bag tr { border: 1px solid #f2f2f2; margin-bottom: 20px; border-radius: 5px; }
 	#table-responsive-bag td { border: none; border-bottom: 1px solid #eee;  position: relative; padding-left: 5%;  white-space: normal; text-align:left; padding-bottom: 15px; }
+  #table-responsive-bag td.hideDesktop { display: block; }
+  #table-responsive-bag td.hideDesktop a { text-decoration: none; font-size: 14px; margin-top: 10px; margin-right: 20px; color: #3498db; font-weight: bold; }
+  #table-responsive-bag td.hideDesktop a:after { content: " | "; display: inline-block; margin-left: 15px; color: #ccc; }
+  #table-responsive-bag td.hideDesktop a:last-child:after { content: ""; }
+  #table-responsive-bag td.hideMobile { display: none; }
   #table-responsive-bag tbody td:nth-child(1):before { content: 'Alias'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
   #table-responsive-bag tbody td:nth-child(2):before { content: 'Nome completo'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
   #table-responsive-bag tbody td:nth-child(3):before { content: 'Email'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
@@ -256,7 +263,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
   #table-responsive-bag tbody td:nth-child(5):before { content: 'Telefone'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
   #table-responsive-bag tbody td:nth-child(6):before { content: 'WhatsApp'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
   #table-responsive-bag tbody td:nth-child(7):before { content: 'Endereço'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
-  #table-responsive-bag tbody td:nth-child(8):before { content: 'Ações'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
+  #table-responsive-bag tbody td:nth-child(9):before { content: 'Ações'; display: block; font-size: 11px; line-height: 10px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
 
   .content .bag-list .table tbody tr td img:nth-child(1) { width: 25px; margin-right: 10px; margin-top: 20px; margin-bottom: 20px; }
   .content .bag-list .table tbody tr td img:nth-child(2) { width: 25px; margin-right: 10px; margin-top: 2px; }
