@@ -282,8 +282,9 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
   .content .bag-report .search-report { margin-bottom: 30px; }
   .content .bag-report .search-report .row .col-8 { width: 100%; margin-bottom: 10px; }
   .content .bag-report .search-report .row .col-2 { width: 100%; margin-bottom: 10px; }
+  .content .bag-report .space { margin-top: 0px; background: #fff; width: 100%; height: 50px; display: block; }
 
   .content .bag-report .table thead th { font-size: 11px; }
   .content .bag-report button { font-size: 13px; width: 105px; padding: 9px 0px; top: -65px; background: #efefef; color: #363e4f; }
-  .content .bag-report .table-responsive { overflow: scroll; height: 280px; margin-bottom: 30px; margin-top: -20px; }
+  
 }
