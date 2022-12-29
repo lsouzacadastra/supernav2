@@ -305,6 +305,53 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
   .content .bag-report .space { margin-top: 0px; background: #fff; width: 100%; height: 50px; display: block; }
 
   .content .bag-report .table thead th { font-size: 14px; }
-  .content .bag-report button { font-size: 13px; width: 105px; padding: 9px 0px; top: -65px; background: #efefef; color: #363e4f; }
+  .content .bag-report button { font-size: 13px; width: 105px; padding: 9px 0px; top: -65px; background: #efefef; color: #363e4f; } 
+}
+
+
+/* COMPONENT NEW BATH */
+.content .new-user { margin-top: 40px; display: none; }
+.content .new-user.show { display: block; }
+.content .new-user form .form-control { margin-bottom: 20px; }
+.content .new-user form .globalButton { margin-top: 20px; }
+
+@media only screen and (max-width:899px) {
+  .content .new-user { margin-top: 20px; }
+  .content .new-user h3 { font-weight: bold; font-size: 18px; margin-bottom: 20px !important; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; }
   
+  .content .new-user form .globalButton { width: 100%; }
+  .content .new-user form label { font-size: 14px; opacity: 0.8; }
+  .content .new-user form .form-control { margin-bottom: 10px; }
+}
+
+/* COMPONENT NEW BATH */
+.content .list-user { margin-top: 40px; display: none; }
+.content .list-user.show { display: block; }
+.content .list-user form .form-control { margin-bottom: 20px; }
+.content .list-user form .globalButton { margin-top: 20px; }
+.content .list-user .table tbody tr td { line-height: 20px; vertical-align: middle; }
+
+@media only screen and (max-width:899px) {
+  .content .list-user { margin-top: 20px; }
+  .content .list-user h3 { font-weight: bold; font-size: 18px; margin-bottom: 20px !important; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; }
+  
+  .content .list-user form .globalButton { width: 100%; }
+  .content .list-user form label { font-size: 14px; opacity: 0.8; }
+  .content .list-user form .form-control { margin-bottom: 10px; }
+
+  .content .list-user .table tbody tr td { line-height: 20px; }
+
+  #table-responsive-users table, 
+	#table-responsive-users thead, 
+	#table-responsive-users tbody, 
+	#table-responsive-users th, 
+	#table-responsive-users td, 
+	#table-responsive-users tr { display: block; }
+ 
+	#table-responsive-users thead tr { position: absolute; top: -9999px; left: -9999px;}
+	#table-responsive-users tr { border: 1px solid #f2f2f2; margin-bottom: 20px; border-radius: 5px; }
+	#table-responsive-users td { border: none; border-bottom: 1px solid #eee;  position: relative; padding-left: 5%;  white-space: normal; text-align:left; padding-bottom: 15px; }
+  #table-responsive-users tbody td:nth-child(1):before { content: 'Nome completo'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
+  #table-responsive-users tbody td:nth-child(2):before { content: 'Email'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
+  #table-responsive-users tbody td:nth-child(3):before { content: 'Nova senha'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }  
 }

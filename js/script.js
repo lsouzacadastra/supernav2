@@ -32,3 +32,13 @@ function showReportsBag() {
     var element = document.getElementById("show-bag-report");
     element.classList.toggle("show");
 }
+
+function showNewUser() {
+    var element = document.getElementById("new-user");
+    element.classList.toggle("show");
+}
+
+function showUsers() {
+    var element = document.getElementById("list-user");
+    element.classList.toggle("show");
+}
