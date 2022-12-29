@@ -193,7 +193,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
   .content .search-products .col-9 { width: 100%; }
   .content .search-products .col-3 { width: 100%; margin-top: 10px;}
 
-  .content .products h3 { font-weight: bold; font-size: 18px; }
+  .content .products h3 { font-weight: bold; font-size: 18px; margin-bottom: 20px !important; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; }
   .content .products h3 small { display: block; float: initial; text-align: left; font-size: 14px; font-weight: normal; opacity: 0.5; }
 
   .content .products .scroll-area { overflow: initial; }
@@ -220,6 +220,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 
 @media only screen and (max-width:899px) {
   .content .new-bag { margin-top: 20px; }
+  .content .new-bag h3 { font-weight: bold; font-size: 18px; margin-bottom: 20px !important; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; }
   .content .bag-list { margin-top: 20px; }
 
   .content .new-bag form .form-control { margin-bottom: 10px; }
@@ -235,6 +236,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 .content .bag-list .table tbody tr td img:nth-child(3) { width: 12px; margin-top: 2px; }
 
 @media only screen and (max-width:899px) {
+  .content .bag-list h3 { font-weight: bold; font-size: 18px; margin-bottom: 20px !important; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; }
   .content .bag-list .table tbody tr td { line-height: 20px; }
 
   #table-responsive-bag table, 
@@ -245,7 +247,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 	#table-responsive-bag tr { display: block; }
  
 	#table-responsive-bag thead tr { position: absolute; top: -9999px; left: -9999px;}
-	#table-responsive-bag tr { border: 2px solid #f2f2f2; margin-bottom: 20px; border-radius: 5px; }
+	#table-responsive-bag tr { border: 1px solid #f2f2f2; margin-bottom: 20px; border-radius: 5px; }
 	#table-responsive-bag td { border: none; border-bottom: 1px solid #eee;  position: relative; padding-left: 5%;  white-space: normal; text-align:left; padding-bottom: 15px; }
   #table-responsive-bag tbody td:nth-child(1):before { content: 'Alias'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
   #table-responsive-bag tbody td:nth-child(2):before { content: 'Nome completo'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
@@ -279,12 +281,13 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 
 @media only screen and (max-width:899px) {
   .content .bag-report { margin-top: 20px; }
+  .content .bag-report h3 { font-weight: bold; font-size: 18px; margin-bottom: 20px !important; border-bottom: 1px solid #f1f1f1; padding-bottom: 20px; }
   .content .bag-report .search-report { margin-bottom: 30px; }
   .content .bag-report .search-report .row .col-8 { width: 100%; margin-bottom: 10px; }
   .content .bag-report .search-report .row .col-2 { width: 100%; margin-bottom: 10px; }
   .content .bag-report .space { margin-top: 0px; background: #fff; width: 100%; height: 50px; display: block; }
 
-  .content .bag-report .table thead th { font-size: 11px; }
+  .content .bag-report .table thead th { font-size: 14px; }
   .content .bag-report button { font-size: 13px; width: 105px; padding: 9px 0px; top: -65px; background: #efefef; color: #363e4f; }
   
 }
