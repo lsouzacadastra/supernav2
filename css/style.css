@@ -253,7 +253,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 	#table-responsive-bag td { border: none; border-bottom: 1px solid #eee;  position: relative; padding-left: 5%;  white-space: normal; text-align:left; padding-bottom: 15px; }
   #table-responsive-bag td.hideDesktop { display: block; }
   #table-responsive-bag td.hideDesktop a { text-decoration: none; font-size: 14px; margin-top: 10px; margin-right: 20px; color: #3498db; font-weight: bold; }
-  #table-responsive-bag td.hideDesktop a:after { content: " | "; display: inline-block; margin-left: 15px; color: #ccc; }
+  #table-responsive-bag td.hideDesktop a:after { content: " | "; display: inline-block; margin-left: 15px; color: #2E333F; opacity: 0.2; }
   #table-responsive-bag td.hideDesktop a:last-child:after { content: ""; }
   #table-responsive-bag td.hideMobile { display: none; }
   #table-responsive-bag tbody td:nth-child(1):before { content: 'Alias'; display: block; font-size: 11px; line-height: 0px; margin-top: 20px; margin-bottom:7px; opacity: 0.65; font-weight: bold; }
