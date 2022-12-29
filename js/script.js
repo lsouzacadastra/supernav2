@@ -17,3 +17,18 @@ function showMenu() {
     var element = document.getElementById("menu-mobile");
     element.classList.toggle("show");
 }
+
+function showNewBag() {
+    var element = document.getElementById("new-bag");
+    element.classList.toggle("show");
+}
+
+function showBag() {
+    var element = document.getElementById("show-bag");
+    element.classList.toggle("show");
+}
+
+function showReportsBag() {
+    var element = document.getElementById("show-bag-report");
+    element.classList.toggle("show");
+}

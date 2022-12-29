@@ -48,12 +48,347 @@
 		<!-- CONTENT -->
 		<div class="content">
 			<div class="actions-bath">
-				<button class="globalButton" onclick="showBath()">Novo</button>
-				<button class="globalButton" onclick="showProducts()">Produtos</button>
-				<button class="globalButton" onclick="showReports()">Relatórios</button>
+				<button class="globalButton" onclick="showNewBag()">Novo</button>
+				<button class="globalButton" onclick="showBag()">Maletas</button>
+				<button class="globalButton" onclick="showReportsBag()">Relatórios</button>
 			</div>
 
-		
+			<div class="new-bag" id="new-bag">
+				<form action="">
+					<h3 class="mb-4">Registrar nova maleta</h3>
+					<label>Alias</label>
+					<input type="text" class="form-control">
+
+					<label>Nome do responsável</label>
+					<input type="text" class="form-control">
+
+					<label>E-mail do responsável</label>
+					<input type="text" class="form-control">
+
+					<label>CPF do Responsável</label>
+					<input type="text" class="form-control" placeholder="000.000.000-00">
+
+					<label>Telefone do Responsável</label>
+					<input type="text" class="form-control">
+
+					<label>WhatsApp do Responsável</label>
+					<input type="text" class="form-control" placeholder="(00) 00000-0000">
+
+					<label>Endereço completo</label>
+					<input type="text" class="form-control">
+
+					<button class="globalButton">Incluir novo maleta</button>
+				</form>
+			</div>
+
+			<div class="bag-list" id="show-bag">
+				<h3 class="mb-4">Maletas registradas</h3>
+				<div class="table-responsive" id="table-responsive-bag">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Alias</th>
+								<th>Nome</th>
+								<th>Email</th>
+								<th>CPF</th>
+								<th>Telefone</th>
+								<th>WhatsApp</th>
+								<th>Endereço</th>
+								<th>Ações</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>leonardo</td>
+								<td>Leonardo de Souza</td>
+								<td>leeoesouza@gmail.com</td>
+								<td>000.000.000-00</td>
+								<td>(11) 933189113</td>
+								<td>(11) 933189113</td>
+								<td>Avenida João Firmino, 1602 - São Bernardo do Campo</td>
+								<td>
+									<img src="assets/icons/icon-editar.svg" data-bs-toggle="modal" data-bs-target="#modalEdit">
+									<img src="assets/icons/icon-produtos-invert.svg" data-bs-toggle="modal" data-bs-target="#modalProduct">
+									<img src="assets/icons/icon-remover.svg">
+								</td>
+							</tr>
+
+							<tr>
+								<td>leonardo</td>
+								<td>Leonardo de Souza</td>
+								<td>leeoesouza@gmail.com</td>
+								<td>000.000.000-00</td>
+								<td>(11) 933189113</td>
+								<td>(11) 933189113</td>
+								<td>Avenida João Firmino, 1602 - São Bernardo do Campo</td>
+								<td>
+									<img src="assets/icons/icon-editar.svg">
+									<img src="assets/icons/icon-produtos-invert.svg">
+									<img src="assets/icons/icon-remover.svg">
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="bag-report" id="show-bag-report">
+				<h3 class="mb-4">Relatório de Maletas </h3>
+				<div class="search-report">
+					<div class="row">
+						<div class="col-8">
+							<input type="text" class="form-control" placeholder="Digite o nome">
+						</div>
+	
+						<div class="col-2">
+							<div class="input-group">
+								<span class="input-group-text" id="basic-addon1">Data Início</span>
+								<input type="date" class="form-control">
+							</div>
+						</div>
+	
+						<div class="col-2">
+							<div class="input-group">
+								<span class="input-group-text" id="basic-addon1">Data Final</span>
+								<input type="date" class="form-control">
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class="table-responsive">
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Código</th>
+								<th>Comissão</th>
+								<th>Pagamento</th>
+								<th>Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>BR601</td>
+								<td>R$ 10,00</td>
+								<td>R$ 45,00</td>
+								<td>R% 55,00</td>
+							</tr>
+
+							<tr>
+								<td>BR601</td>
+								<td>R$ 10,00</td>
+								<td>R$ 45,00</td>
+								<td>R% 55,00</td>
+							</tr>
+
+							<tr>
+								<td>BR601</td>
+								<td>R$ 10,00</td>
+								<td>R$ 45,00</td>
+								<td>R% 55,00</td>
+							</tr>
+
+							<tr>
+								<td>BR601</td>
+								<td>R$ 10,00</td>
+								<td>R$ 45,00</td>
+								<td>R% 55,00</td>
+							</tr>
+
+							<tr>
+								<td>BR601</td>
+								<td>R$ 10,00</td>
+								<td>R$ 45,00</td>
+								<td>R% 55,00</td>
+							</tr>
+
+							<tr>
+								<td>BR601</td>
+								<td>R$ 10,00</td>
+								<td>R$ 45,00</td>
+								<td>R% 55,00</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="resume-reports">
+					<ul>
+						<li>Valor total das vendas: <b>R$ 180,00</b></li>
+						<li>Valor da Comissão: <b>R$ 54,00</b></li>
+						<li>Valor do Pagamento: <b>R$ 126,00</b></li>
+						<li>Total de peças: <b>4</b></li>
+					</ul>
+				</div>
+
+
+			</div>
+
+
+
+
+
+
+
+
+
+
+			<!-- MODAL EDIT -->
+			<div class="modal fade" id="modalEdit" tabindex="-1" aria-labelledby="modalEditLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modalEditLabel">Maleta de $username</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<form action="">
+								<label>Alias</label>
+								<input type="text" class="form-control">
+			
+								<label>Nome do responsável</label>
+								<input type="text" class="form-control">
+			
+								<label>E-mail do responsável</label>
+								<input type="text" class="form-control">
+			
+								<label>CPF do Responsável</label>
+								<input type="text" class="form-control" placeholder="000.000.000-00">
+			
+								<label>Telefone do Responsável</label>
+								<input type="text" class="form-control">
+			
+								<label>WhatsApp do Responsável</label>
+								<input type="text" class="form-control" placeholder="(00) 00000-0000">
+			
+								<label>Endereço completo</label>
+								<input type="text" class="form-control">
+			
+								<button class="globalButton">Salvar</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END MODAL EDIT -->
+
+			<!-- MODAL PRODUCTS -->
+			<div class="modal fade" id="modalProduct" tabindex="-1" aria-labelledby="modalProductLabel" aria-hidden="true">
+				<div class="modal-dialog modal-dialog-centered">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="modalProductLabel">Gerenciar <span>50 produtos cadastrados</span></h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						</div>
+						<div class="modal-body">
+							<div class="scroll-area" style="display: none;">
+								<div class="list-product-modal">
+									<div>
+										<img src="https://via.placeholder.com/200" alt="">
+										<span class="badge bg-primary">Vendido</span>
+									</div>
+
+									<div>
+										<span>BR601 <em>Valor: R$ 45,00</em></span>
+										<p>Reference site about Lorem Ipsum, giving information on 
+										its origins, as well as a random Lipsum generator.
+										</p>
+										<a href="">Visualizar</a>
+										<a href=""><img src="assets/icons/icon-check.svg"> Marcar como vendido</a>
+									</div>
+								</div>
+
+								<div class="list-product-modal">
+									<div>
+										<img src="https://via.placeholder.com/200" alt="">
+									</div>
+
+									<div>
+										<span>BR601 <em>Valor: R$ 45,00</em></span>
+										<p>Reference site about Lorem Ipsum, giving information on 
+										its origins, as well as a random Lipsum generator.
+										</p>
+										<a href="">Visualizar</a>
+										<a href=""><img src="assets/icons/icon-check.svg"> Marcar como vendido</a>
+									</div>
+								</div>
+
+								<div class="list-product-modal">
+									<div>
+										<img src="https://via.placeholder.com/200" alt="">
+									</div>
+
+									<div>
+										<span>BR601 <em>Valor: R$ 45,00</em></span>
+										<p>Reference site about Lorem Ipsum, giving information on 
+										its origins, as well as a random Lipsum generator.
+										</p>
+										<a href="">Visualizar</a>
+										<a href=""><img src="assets/icons/icon-check.svg"> Marcar como vendido</a>
+									</div>
+								</div>
+
+								<div class="list-product-modal">
+									<div>
+										<img src="https://via.placeholder.com/200" alt="">
+									</div>
+
+									<div>
+										<span>BR601 <em>Valor: R$ 45,00</em></span>
+										<p>Reference site about Lorem Ipsum, giving information on 
+										its origins, as well as a random Lipsum generator.
+										</p>
+										<a href="">Visualizar</a>
+										<a href=""><img src="assets/icons/icon-check.svg"> Marcar como vendido</a>
+									</div>
+								</div>
+
+								<div class="list-product-modal">
+									<div>
+										<img src="https://via.placeholder.com/200" alt="">
+									</div>
+
+									<div>
+										<span>BR601 <em>Valor: R$ 45,00</em></span>
+										<p>Reference site about Lorem Ipsum, giving information on 
+										its origins, as well as a random Lipsum generator.
+										</p>
+										<a href="">Visualizar</a>
+										<a href=""><img src="assets/icons/icon-check.svg"> Marcar como vendido</a>
+									</div>
+								</div>
+							
+							</div>
+
+							<div class="add-product" style="display: block;">
+								<input type="text" class="form-control" placeholder="Digite o código do produto">
+								<small>Você encontrou o produto "BR601"</small>
+								<div class="alert alert-success" role="alert">
+									Produto Adicionado com Sucesso
+								  </div>
+								<div class="list-product-modal bg">
+									<div>
+										<img src="https://via.placeholder.com/200" alt="">
+									</div>
+
+									<div>
+										<span>BR601 <em>Valor: R$ 45,00 | Custo: R$ 10,58</em></span>
+										<p>Reference site about Lorem Ipsum, giving information on 
+										its origins, as well as a random Lipsum generator.
+										</p>
+										<a href=""><img src="assets/icons/icon-check.svg"> Adicionar produto</a>
+									</div>
+								</div>
+							</div>
+
+							<button class="globalButton">Adicionar produtos</button>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END MODAL PRODUCTS -->
+
 
 
 		</div>
@@ -64,4 +399,4 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 	
 </body>
-</html>4
+</html>
