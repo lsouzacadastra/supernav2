@@ -214,7 +214,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
   .content .bag-list { margin-top: 20px; }
 
   .content .new-bag form .form-control { margin-bottom: 10px; }
-  .content .new-bag form .globalButton { width: 100%; margin-top: 10px; }
+  .content .new-bag form .globalButton { width: 100%; margin-top: 10px; margin-bottom: 40px;}
 }
 
 .content .bag-list .table tbody tr td { font-size: 14px; vertical-align: middle; padding: 7px; line-height: 40px; color: rgba(0,0,0,0.6);}
