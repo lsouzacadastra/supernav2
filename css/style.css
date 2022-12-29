@@ -54,6 +54,21 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 
 /* MODAL */
 .content .modal h5.modal-title span { font-size: 13px; opacity: 0.6; }
+.content .modal .modal-body { position: relative; }
+
+.content .modal .modal-body .collapse.customPrint { background:#fff; padding: 20px; position: absolute; top: 0; width: 93.5%; height: 98%; overflow: scroll; }
+.content .modal .modal-body .collapse.customPrint .buttons button:nth-child(2) { margin-right: 20px; }
+.content .modal .modal-body .collapse.customPrint .preview { background: #f1f1f1; width: 100%; height: 250px; border-radius: 5px; margin-top: 5px; }
+.content .modal .modal-body .collapse.customPrint .globalButton.bottom { margin-top: 20px; position: absolute; bottom: 20px; }
+
+
+@media only screen and (max-width:899px) {
+  .content .modal .modal-body .collapse.customPrint { padding: 0px; width: 92%; }
+  .content .modal .modal-body .collapse.customPrint span:nth-child(1) { margin-top: 10px; display: block; }
+  .content .modal .modal-body .collapse.customPrint .buttons button:nth-child(1) { margin-right: 0px; }
+  .content .modal .modal-body .collapse.customPrint .buttons button:nth-child(2) { margin-right: 0px; }
+}
+
 .content .modal .modal-body .form-control { margin-bottom: 10px; }
 .content .modal .modal-body .form-select { margin-bottom: 10px; }
 .content .modal .modal-body .globalButton { margin-top: 10px; width: 100%; }
@@ -108,6 +123,7 @@ input.form-control:focus { box-shadow: none; border: 1px solid #f1f1f1; backgrou
 
   .content .modal .modal-body .buttons .globalButton:nth-child(1) { font-size: 12px; }
   .content .modal .modal-body .buttons .globalButton:nth-child(2) { font-size: 12px; }
+  .content .modal .modal-body .buttons .globalButton:nth-child(3) { font-size: 12px; }
 
   .content .modal .modal-body .list-product-modal.bg { padding: 10px; }
   .content .modal .modal-body .list-product-modal.bg span em { display: block; }
